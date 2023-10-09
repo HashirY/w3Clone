@@ -3,7 +3,6 @@ import kaiimg from "../../images/spacesimages/kai.png";
 import svg1 from "../../images/spacesimages/boxes.svg";
 import svg2 from "../../images/spacesimages/globe.svg";
 import svg3 from "../../images/spacesimages/puzzle.svg";
-import { FaRobot } from "react-icons/fa";
 import { BsRobot } from "react-icons/bs";
 
 const Spaces = () => {
@@ -44,11 +43,19 @@ const Spaces = () => {
             <p className="font-bold text-white">AI Tutor</p>
           </div>
         </div>
-        <div>
+        <div className="grid grid-cols-2 gap-x-10">
           <img src={svg1} alt="" />
+          <div className="flex flex-col items-center justify-center">
+            <h4 className="text-[#D9EEE1] text-[22px] font-semibold">Build</h4>
+            <p className="font-bold text-white">Websites</p>
+          </div>
         </div>
-        <div>
+        <div className="grid grid-cols-2 gap-x-10">
           <img src={svg2} alt="" />
+          <div className="flex flex-col items-center justify-center">
+            <h4 className="text-[#D9EEE1] text-[22px] font-semibold">Host</h4>
+            <p className="font-bold text-white">Securely</p>
+          </div>
         </div>
       </div>
     </div>

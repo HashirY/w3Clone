@@ -1,8 +1,12 @@
 import { FaSearch } from "react-icons/fa";
+import Clock from "./Clock";
 
 const Hero = () => {
   return (
     <div className="bg-hero-image w-full h-[510px] flex justify-center items-center ">
+      <div className="absolute top-40  right-24">
+        <Clock />
+      </div>
       <div className="xl:flex lg:hidden sm:hidden xs:hidden">
         <div className="bg-lynx-image w-[12%] h-[27%] absolute right-[200px] bg-cover top-[300px]"></div>
       </div>
