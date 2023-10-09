@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const SecondHero = () => {
   return (
     <div className="grid lg:grid-cols-2 grid-cols-1 text-black">
@@ -105,9 +107,11 @@ const SecondHero = () => {
               <span className="text-[#4A19CC] dark:text-[#88CCBB]">&gt;</span>
             </div>
           </div>
-          <button className="bg-[#05AB6D] text-white p-2 mt-4 w-full rounded-3xl">
-            Try It Yourself
-          </button>
+          <Link to={"/codeeditor"}>
+            <button className="bg-[#05AB6D] text-white p-2 mt-4 w-full rounded-3xl">
+              Try It Yourself
+            </button>
+          </Link>
         </div>
       </div>
     </div>

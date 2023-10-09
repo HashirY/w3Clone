@@ -25,6 +25,8 @@ import JsPage from "./components/pages/JsPage.jsx";
 import { useState } from "react";
 import SqlPage from "./components/pages/SqlPage.jsx";
 import Spaces from "./components/pages/Spaces.jsx";
+import Button from "./codeeditor/Button.jsx";
+import { MainPage } from "./codeeditor/MainPage.jsx";
 
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -88,6 +90,15 @@ export default function App() {
               <BelowNavbar />
               <Spaces />
               <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/codeeditor"
+          element={
+            <>
+              <Button />
+              <MainPage />
             </>
           }
         />
